@@ -1,0 +1,6 @@
+name: "This is hello action"
+description: "set hello with git atcions"
+
+runs:
+  using: docker
+  image: Dockerfile

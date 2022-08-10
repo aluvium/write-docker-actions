@@ -3,4 +3,4 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 WORKDIR /cats
 COPY . .
-CMD [ "python", "main.py" ]
+CMD [ "/bin/python", "src/main.py" ]

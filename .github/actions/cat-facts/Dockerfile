@@ -4,5 +4,7 @@ RUN apt-get update -y \
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /cats
 COPY . .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt
+RUN ls *
 CMD ["python", "./src/main.py"]

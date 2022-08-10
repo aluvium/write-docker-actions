@@ -1,7 +1,7 @@
 package main
 import (
-	fmt
-        os
+	"fmt"
+        "os"
 )
 func main() {
      firstGreeting := os.Getenv("INPUT_FIRSTGREETING")

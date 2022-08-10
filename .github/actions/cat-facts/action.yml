@@ -3,7 +3,7 @@ description: "Get external data with GitHub Actions"
 
 outputs:
   facts:
-    descriptions: Resulting cat fact from https://cat-fact.herokuapp.com/facts api
+    description: Resulting cat fact from https://cat-fact.herokuapp.com/facts api
 
 runs:
   using: docker

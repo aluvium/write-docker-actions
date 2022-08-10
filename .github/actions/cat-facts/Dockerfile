@@ -7,4 +7,4 @@ COPY . .
 RUN pip install --upgrade pip \
     && pip install --no-cache-dir -r requirements.txt
 RUN ls *
-CMD ["python", "./src/main.py"]
+RUN python src/main.py

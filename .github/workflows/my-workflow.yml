@@ -1,6 +1,7 @@
 name: Docker Actions
 on:
-  push:
+  pull_request:
+    types: [labeled]
 
 jobs:
   action:
@@ -12,3 +13,5 @@ jobs:
         uses: ./.github/actions/hello-world
         with:
           firstGreeting: "Xena Princess"
+      - name: meaow
+        uses: ./.github/actions/cat-facts
